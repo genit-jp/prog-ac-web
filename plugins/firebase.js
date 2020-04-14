@@ -3,7 +3,7 @@ import firebase from 'firebase'
 if (!firebase.apps.length) {
   firebase.initializeApp(
     {
-      apiKey: 'AIzaSyDOMkiPvKBxi70MMd3-ud53DvA97egMIaU',
+      apiKey: 'AIzaSyBQNiUrnO12O5NUq2sMhwco6s6mfnnB9l4',
       authDomain: 'prog-ac-web.firebaseapp.com',
       databaseURL: 'https://prog-ac-web.firebaseio.com',
       projectId: 'prog-ac-web',
