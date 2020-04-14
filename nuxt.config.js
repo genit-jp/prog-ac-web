@@ -6,18 +6,18 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '神戸プログラミングアカデミー',
-    title: '神戸プログラミングアカデミー',
+    titleTemplate: '神戸の無料プログラミング学校＆学習コミュニティ|神戸プログラミングアカデミー',
+    title: '神戸の無料プログラミング学校＆学習コミュニティ|神戸プログラミングアカデミー',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '神戸の無料のプログラミング学校＆学習コミュニティ' },
-      { property: 'og:title', content: '神戸プログラミングアカデミー' },
+      { hid: 'description', name: 'description', content: '「未経験から」「スキルアップ」「起業を目指す」無料で学べる神戸のプログラミング学校＆学習コミュニティ' },
+      { property: 'og:title', content: '神戸の無料プログラミング学校＆学習コミュニティ|神戸プログラミングアカデミー' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://www.prog-ac.jp/' },
       { property: 'og:image', content: 'https://www.prog-ac.jp/images/ogp.jpg' },
       { property: 'og:site_name', content: '神戸プログラミングアカデミー' },
-      { property: 'og:description', content: '神戸の無料のプログラミング学校＆学習コミュニティ' },
+      { property: 'og:description', content: '神戸の無料プログラミング学校＆学習コミュニティ|神戸プログラミングアカデミー' },
       { property: 'fb', content: '2531878607078131' },
       { property: 'twitter:card', content: 'summary_large_image' }
     ],
@@ -50,11 +50,19 @@ export default {
   /*
   ** Nuxt.js modules
   */
+
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    ['nuxt-webfontloader']
+    ['nuxt-webfontloader'],
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: 'UA-91004466-11',
+        debug: false
+      }
+    ]
   ],
   webfontloader: {
     google: {
